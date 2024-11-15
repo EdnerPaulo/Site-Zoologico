@@ -1,3 +1,4 @@
+// Código para rolar a página até o topo (já existente)
 const backToTopButton = document.getElementById("back-to-top");
 
 // Monitora a rolagem da página
@@ -14,3 +15,15 @@ backToTopButton.onclick = function(e) {
     e.preventDefault(); // Evita comportamento padrão do link
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Rolagem suave
 };
+
+// Novo código para o botão "Clique aqui para saber mais"
+const showMessageButton = document.getElementById("show-message-button");
+const message = document.getElementById("message");
+
+// Função para mostrar a mensagem quando o botão for clicado
+showMessageButton.onclick = function() {
+    message.style.display = "block";  // Exibe a mensagem
+    showMessageButton.style.display = "none";  // Oculta o botão após o clique
+};
+
+
